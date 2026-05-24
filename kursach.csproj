@@ -58,6 +58,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -83,6 +84,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,9 +93,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCourseRequestWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCourseRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationUserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseTeacherWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourseRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherJournalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseRequest.cs" />
+    <Compile Include="MyApplicationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileUserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramUserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.cs" />
+    <Compile Include="TeacherCourseRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherScheduleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Services\DatabaseAdapter.cs" />
     <Compile Include="Data\IDatabaseAdapter.cs" />
     <Compile Include="Program.cs" />
@@ -101,6 +143,12 @@
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="StudentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

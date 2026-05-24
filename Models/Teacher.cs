@@ -10,5 +10,6 @@ namespace kursach
     {
         public int teacher_id { get; set; }
         public int user_id { get; set; }
+        public string full_name { get; set; }
     }
 }
